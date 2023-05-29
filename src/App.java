@@ -6,5 +6,10 @@ public class App {
         AuthenticHuman authenticHuman = new AuthenticHuman();
         authenticHuman.improveTalency();
 
+        // The add-on class
+        Human talentedHuman = new TalentedHuman(authenticHuman);
+        // or Hman talentedHuman=new TalentedHuman(new AuthenticHuman());
+        talentedHuman.improveTalency();
+
     }
 }
